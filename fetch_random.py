@@ -8,7 +8,7 @@ SOUND_SAMPLING_RATE = 4410
 SAMPLE_LEN = SOUND_SAMPLING_RATE * 3 # 3 seconds
 
 def random_ints(n):
-	""" Return n random ints 0-255 using random.org library"""
+	""" Return n random ints 0-255 using random.org library """
 	
 	# Make multiple requests if n > MAX_REQUEST_SIZE
 	data = []
@@ -20,7 +20,7 @@ def random_ints(n):
 
 def random_int_request(n):
 	""" Return n (where n < MAX_REQUEST_SIZE) random ints 
-		0-255 using random.org library"""
+		0-255 using random.org library """
 
 	params = {
 		"num"    : str(n),
@@ -53,7 +53,7 @@ def show_pic(data):
 def generate_sound(data):
 	""" Ouput wav file based on inpute data with sampling rate
 	SOUND_SAMPLING_RATE. This function assumes input data is in range 0-255 and
-	scales accordingly."""
+	scales accordingly """
 
 	# wav generation inspired by:
 	# https://soledadpenades.com/2009/10/29/fastest-way-to-generate-wav-files-in-python-using-the-wave-module/
